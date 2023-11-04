@@ -1,0 +1,122 @@
+body{
+    /* margen  hacia afuera*/
+    margin: 0;
+    /* margen hacia adentro */
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+/* ***************************** */
+header{
+    width: 100%;
+    height: 60px;           
+}
+/* ***************************** */
+header nav{
+    /* justificar texto a la derecha nos habilidad flex end, flex start...*/
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    /* elimianr puntos de la lista */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* centrado verticalmente */
+    align-items: center;
+}
+/*  editar anclas */
+a{
+    /* eliminar linea debajo del texto */
+    text-decoration: none;
+}
+nav .nav-right-section a{
+    color: black;
+    /* espacio entre anclas */
+    margin-right: 20px;
+}
+
+nav .nav-right-section .menu{
+    /* agregar imagen desde css */
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* imagen que este contenido en el elemento as grande */
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+nav .nav-right-section img{
+    /*  redondeamos bordes */
+    border-radius: 100%;
+    /* tamaño imagen */
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+/* ******************************* */
+/* ******************************* */
+/* ******************************* */
+/* ******************************* */
+
+main{
+
+    margin-top: 200px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    /* centra absolutamente(margenes automaticos) 
+    vertical y horizontal*/
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 100px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+
+}
+main .main-input-container{
+    /* ancho-estilo-color */
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+    /* anchura */
+    width: 525px;
+}
+main .main-input input{
+    height: 33px;
+    /* quitar brode por defecto */
+    border: none;
+    /* quitar borde activo */
+    outline: none;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 7%;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    /* margin-left: 10px; */
+}
+
+main .main-input .micro-icon{
+    background-image: https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg;
+    background-size: contain;
+    padding-left:10px;
+    width:20px;
+    heiht:20px;
+
+}
+main .main-input .cam-icon{
+    background-image: url();
+}
+
