@@ -63,7 +63,7 @@ nav .nav-right-section img{
 
 main{
 
-    margin-top: 200px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -72,10 +72,13 @@ main .main-logo{
     /* centra absolutamente(margenes automaticos) 
     vertical y horizontal*/
     margin: 0 auto;
+    margin-top: 0 px;
+    
 }
 
 main .main-logo img{
     height: 100px;
+
 }
 
 main .main-input{
@@ -91,32 +94,119 @@ main .main-input-container{
     width: 525px;
 }
 main .main-input input{
-    height: 33px;
+    height: 36px;
     /* quitar brode por defecto */
     border: none;
     /* quitar borde activo */
     outline: none;
+    width: 425px;
 }
 
-main .main-input .search-icon{
+main .main-input .search-icon {
     background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
     background-size: contain;
     padding-left: 7%;
     background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    /* margin-left: 10px; */
-}
-
-main .main-input .micro-icon{
-    background-image: https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg;
+    width: 12px;
+    height: 13px;
+    background-position: center;
+  }
+  
+  main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
     background-size: contain;
-    padding-left:10px;
-    width:20px;
-    heiht:20px;
+    padding-left: 10px;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+  }
+  
+  main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-right: 15px;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    height: 25px;
+    width: 25px;
+  }
 
+main .main-buttons{
+    display: flex;
+    justify-content: center;
+    width: 530px;
+    margin:0 auto;
+    padding: 30px 0px 0px;
 }
-main .main-input .cam-icon{
-    background-image: url();
+button{
+    font-size: 15px;
+    font-family: arial,sans-serif;
+    color: #3c4043;
+    border-radius: 5px;
+    border: 1px solid #f8f9fa;
+    height: 36px;
+    min-width: 54px;
+    padding: 0 16px;
+    margin: 0px 5px;
+    cursor: pointer;
+    background-color: #f8f9fa;
 }
 
+button:hover{
+    box-shadow: 1px 1px 3px 0.3px rgb(232, 230, 230);
+    border:1px solid #dfe1e5;
+}
+/* ******************************* */
+/* ******************************* */
+/* ******************************* */
+/* ******************************* */
+
+footer{
+    position:absolute;
+    width:100%;
+    bottom:0px;
+    border-bottom: 1px solid #dfe1e5;
+    background-color: #eeeff0;
+    color: #70757A;
+    height:auto;
+    font-size: 15px;
+    font-family: arial,sans-serif;
+}
+footer .footerM{
+    height:49px;
+    display: flex;
+    align-items:center;  
+    border-bottom: 1px solid #dfe1e5;
+}
+
+footer .footerM p{
+    margin-left: 35px;
+}
+footer nav{
+    margin:0 ;
+    padding:0 0;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer nav .footer-left, .footer-right{
+    margin:0;
+    height:49px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    list-style:none;
+    font-size: 15px;
+    font-family: arial,sans-serif;
+    background-color: #eeeff0;
+    
+}
+footer nav  a{
+    color: #3c4043;
+    margin-right:25px;
+}
+footer nav  a:hover{
+    text-decoration: underline;
+}
